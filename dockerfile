@@ -4,9 +4,9 @@ ARG KERNEL_BRANCH=rpi-6.6.y
 ARG KERNEL_GIT=https://github.com/raspberrypi/linux.git
 
 # Distro source
-ARG DISTRO_DATE=2024-11-19
-ARG DISTRO_FILE=$DISTRO_DATE-raspios-bookworm-arm64-lite.img
-ARG DISTRO_IMG=https://downloads.raspberrypi.com/raspios_lite_arm64/images/raspios_lite_arm64-$DISTRO_DATE/$DISTRO_FILE.xz
+ARG DISTRO_DATE=2025.3
+ARG DISTRO_FILE=kali-linux-$DISTRO_DATE-raspberry-pi-arm64.img
+ARG DISTRO_IMG=https://kali.download/arm-images/kali-$DISTRO_DATE/$DISTRO_FILE.xz
 
 # Default directory and file names
 ARG BUILD_DIR=/build/
