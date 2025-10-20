@@ -33,7 +33,7 @@ ARG DISTRO_FILE
 ARG DISTRO_IMG
 
 # Download raspbian distro
-RUN wget -nv -O --no-check-certificate /tmp/$DISTRO_FILE.xz $DISTRO_IMG \
+RUN wget -nv --no-check-certificate -O /tmp/$DISTRO_FILE.xz $DISTRO_IMG \
  && unxz /tmp/$DISTRO_FILE.xz
 
 # Extract distro boot and root
